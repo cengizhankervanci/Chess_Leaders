@@ -1,5 +1,5 @@
 //
-//  FirstTabbarViewController.swift
+//  BlitzViewController.swift
 //  CheesLeadersMVVM
 //
 //  Created by Cengizhan Kervancı on 1.06.2023.
@@ -7,11 +7,11 @@
 
 import UIKit
 
-class FirstTabbarViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
-    
+class BlitzViewController: UIViewController , UITableViewDelegate , UITableViewDataSource{
+
     let tableView = UITableView()
     
-    private var leadersVM : DailyListViewModel!
+    private var leaderBlitzVM : BlitzListViewModel!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -49,7 +49,7 @@ class FirstTabbarViewController: UIViewController, UITableViewDelegate, UITableV
         let url = URL(string: "https://api.chess.com/pub/leaderboards")
         WebService().downloadData(url: url!) { leaders in
             if let leaders = leaders{
-                self.leadersVM = DailyListViewModel(leaders: leaders)
+                self.leaderBlitzVM = BlitzListViewModel(leadersBlitz: leaders)
                 DispatchQueue.main.async {
                     self.tableView.reloadData()
                 }
@@ -58,20 +58,20 @@ class FirstTabbarViewController: UIViewController, UITableViewDelegate, UITableV
     }
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return self.leadersVM == nil ? 0 : self.leadersVM.leaderCount()
+        return self.leaderBlitzVM == nil ? 0 : self.leaderBlitzVM.leaderBlitzCount()
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "myCell", for: indexPath) as! MyCellTableViewCell
         
-        let leadVM = self.leadersVM.bindWithIndex(index: indexPath.row)
-        cell.fillAreaWithData(avatar: leadVM.avatar, userName: leadVM.username, rank: leadVM.rank, score: leadVM.score, win: leadVM.win_count, draw: leadVM.draw_count, loss: leadVM.loss_count)
+        let leaderBlitzVM = self.leaderBlitzVM.leaderBlitzBindWithIndex(index: indexPath.row)
+        cell.fillAreaWithData(avatar: leaderBlitzVM.avatar, userName: leaderBlitzVM.username, rank: leaderBlitzVM.rank, score: leaderBlitzVM.score, win: leaderBlitzVM.win_count, draw: leaderBlitzVM.draw_count, loss: leaderBlitzVM.loss_count)
         return cell
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 150
     }
-    
+
 
 }

@@ -7,11 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		184A60342A289E7800BE925E /* FirstTabbarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184A60332A289E7800BE925E /* FirstTabbarViewController.swift */; };
-		184A60362A289F8000BE925E /* SecondTabbarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184A60352A289F8000BE925E /* SecondTabbarViewController.swift */; };
-		184A60382A28A5AF00BE925E /* ThirdTabbarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184A60372A28A5AF00BE925E /* ThirdTabbarViewController.swift */; };
-		184A603A2A28AFB000BE925E /* RushListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184A60392A28AFB000BE925E /* RushListViewModel.swift */; };
-		184A603C2A28B5E200BE925E /* BattleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184A603B2A28B5E200BE925E /* BattleViewModel.swift */; };
+		184A60342A289E7800BE925E /* DailyTabbarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184A60332A289E7800BE925E /* DailyTabbarViewController.swift */; };
+		184A60362A289F8000BE925E /* BulletTabbarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184A60352A289F8000BE925E /* BulletTabbarViewController.swift */; };
+		184A60382A28A5AF00BE925E /* RapidTabbarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184A60372A28A5AF00BE925E /* RapidTabbarViewController.swift */; };
+		184A603A2A28AFB000BE925E /* BulletListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184A60392A28AFB000BE925E /* BulletListViewModel.swift */; };
+		184A603C2A28B5E200BE925E /* RapidListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184A603B2A28B5E200BE925E /* RapidListViewModel.swift */; };
 		18B84BC22A27B675003F21CB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B84BC12A27B675003F21CB /* AppDelegate.swift */; };
 		18B84BC42A27B675003F21CB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B84BC32A27B675003F21CB /* SceneDelegate.swift */; };
 		18B84BC62A27B675003F21CB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B84BC52A27B675003F21CB /* ViewController.swift */; };
@@ -23,14 +23,16 @@
 		18B84BE12A27FB51003F21CB /* WebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B84BE02A27FB51003F21CB /* WebService.swift */; };
 		18B84BE32A2801F6003F21CB /* DailyListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B84BE22A2801F6003F21CB /* DailyListViewModel.swift */; };
 		18B84BE62A2806DA003F21CB /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 18B84BE52A2806DA003F21CB /* Kingfisher */; };
+		18DE432F2A28BF5B00EF81A5 /* BlitzViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18DE432E2A28BF5B00EF81A5 /* BlitzViewController.swift */; };
+		18DE43312A28BFE500EF81A5 /* BlitzViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18DE43302A28BFE500EF81A5 /* BlitzViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		184A60332A289E7800BE925E /* FirstTabbarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstTabbarViewController.swift; sourceTree = "<group>"; };
-		184A60352A289F8000BE925E /* SecondTabbarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondTabbarViewController.swift; sourceTree = "<group>"; };
-		184A60372A28A5AF00BE925E /* ThirdTabbarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdTabbarViewController.swift; sourceTree = "<group>"; };
-		184A60392A28AFB000BE925E /* RushListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RushListViewModel.swift; sourceTree = "<group>"; };
-		184A603B2A28B5E200BE925E /* BattleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BattleViewModel.swift; sourceTree = "<group>"; };
+		184A60332A289E7800BE925E /* DailyTabbarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyTabbarViewController.swift; sourceTree = "<group>"; };
+		184A60352A289F8000BE925E /* BulletTabbarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BulletTabbarViewController.swift; sourceTree = "<group>"; };
+		184A60372A28A5AF00BE925E /* RapidTabbarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RapidTabbarViewController.swift; sourceTree = "<group>"; };
+		184A60392A28AFB000BE925E /* BulletListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BulletListViewModel.swift; sourceTree = "<group>"; };
+		184A603B2A28B5E200BE925E /* RapidListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RapidListViewModel.swift; sourceTree = "<group>"; };
 		18B84BBE2A27B675003F21CB /* CheesLeadersMVVM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CheesLeadersMVVM.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		18B84BC12A27B675003F21CB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		18B84BC32A27B675003F21CB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -43,6 +45,8 @@
 		18B84BDE2A27F9DE003F21CB /* LeadersModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeadersModel.swift; sourceTree = "<group>"; };
 		18B84BE02A27FB51003F21CB /* WebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebService.swift; sourceTree = "<group>"; };
 		18B84BE22A2801F6003F21CB /* DailyListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyListViewModel.swift; sourceTree = "<group>"; };
+		18DE432E2A28BF5B00EF81A5 /* BlitzViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlitzViewController.swift; sourceTree = "<group>"; };
+		18DE43302A28BFE500EF81A5 /* BlitzViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlitzViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,9 +99,10 @@
 			children = (
 				18B84BD52A27B8B9003F21CB /* MyCellTableViewCell.swift */,
 				18B84BC52A27B675003F21CB /* ViewController.swift */,
-				184A60332A289E7800BE925E /* FirstTabbarViewController.swift */,
-				184A60352A289F8000BE925E /* SecondTabbarViewController.swift */,
-				184A60372A28A5AF00BE925E /* ThirdTabbarViewController.swift */,
+				184A60332A289E7800BE925E /* DailyTabbarViewController.swift */,
+				184A60352A289F8000BE925E /* BulletTabbarViewController.swift */,
+				184A60372A28A5AF00BE925E /* RapidTabbarViewController.swift */,
+				18DE432E2A28BF5B00EF81A5 /* BlitzViewController.swift */,
 			);
 			name = View;
 			path = "vİEW";
@@ -115,8 +120,9 @@
 			isa = PBXGroup;
 			children = (
 				18B84BE22A2801F6003F21CB /* DailyListViewModel.swift */,
-				184A60392A28AFB000BE925E /* RushListViewModel.swift */,
-				184A603B2A28B5E200BE925E /* BattleViewModel.swift */,
+				184A60392A28AFB000BE925E /* BulletListViewModel.swift */,
+				184A603B2A28B5E200BE925E /* RapidListViewModel.swift */,
+				18DE43302A28BFE500EF81A5 /* BlitzViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -206,18 +212,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				184A60382A28A5AF00BE925E /* ThirdTabbarViewController.swift in Sources */,
+				184A60382A28A5AF00BE925E /* RapidTabbarViewController.swift in Sources */,
 				18B84BC62A27B675003F21CB /* ViewController.swift in Sources */,
 				18B84BE32A2801F6003F21CB /* DailyListViewModel.swift in Sources */,
 				18B84BD62A27B8B9003F21CB /* MyCellTableViewCell.swift in Sources */,
 				18B84BE12A27FB51003F21CB /* WebService.swift in Sources */,
-				184A60362A289F8000BE925E /* SecondTabbarViewController.swift in Sources */,
+				18DE432F2A28BF5B00EF81A5 /* BlitzViewController.swift in Sources */,
+				184A60362A289F8000BE925E /* BulletTabbarViewController.swift in Sources */,
 				18B84BDF2A27F9DE003F21CB /* LeadersModel.swift in Sources */,
-				184A60342A289E7800BE925E /* FirstTabbarViewController.swift in Sources */,
-				184A603C2A28B5E200BE925E /* BattleViewModel.swift in Sources */,
+				184A60342A289E7800BE925E /* DailyTabbarViewController.swift in Sources */,
+				184A603C2A28B5E200BE925E /* RapidListViewModel.swift in Sources */,
 				18B84BC22A27B675003F21CB /* AppDelegate.swift in Sources */,
 				18B84BC42A27B675003F21CB /* SceneDelegate.swift in Sources */,
-				184A603A2A28AFB000BE925E /* RushListViewModel.swift in Sources */,
+				18DE43312A28BFE500EF81A5 /* BlitzViewModel.swift in Sources */,
+				184A603A2A28AFB000BE925E /* BulletListViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -363,10 +371,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 0;
 				DEVELOPMENT_TEAM = JXQ3D6TTN6;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = CheesLeadersMVVM/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Chess Leaders";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -392,10 +402,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 0;
 				DEVELOPMENT_TEAM = JXQ3D6TTN6;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = CheesLeadersMVVM/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Chess Leaders";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;

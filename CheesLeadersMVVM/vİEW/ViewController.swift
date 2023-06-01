@@ -22,22 +22,24 @@ class ViewController: UIViewController {
     func createTabbar(){
         let tabBarVC = UITabBarController()
         
-        let vc1 = UINavigationController(rootViewController: FirstTabbarViewController())
-        let vc2 = UINavigationController(rootViewController: SecondTabbarViewController())
-        let vc3 = UINavigationController(rootViewController: ThirdTabbarViewController())
+        let vc1 = UINavigationController(rootViewController: DailyTabbarViewController())
+        let vc2 = UINavigationController(rootViewController: BulletTabbarViewController())
+        let vc3 = UINavigationController(rootViewController: RapidTabbarViewController())
+        let vc4 = UINavigationController(rootViewController: BlitzViewController())
         
         vc1.title = "Daily"
-        vc2.title = "Rush"
-        vc3.title = "Battle"
+        vc2.title = "Bullet"
+        vc3.title = "Rapid"
+        vc4.title = "Live Blitz"
         
-        tabBarVC.setViewControllers([vc1,vc2,vc3], animated: false)
+        tabBarVC.setViewControllers([vc1,vc2,vc3,vc4], animated: false)
         tabBarVC.modalPresentationStyle = .fullScreen
         
         guard let items = tabBarVC.tabBar.items else {
             return
         }
         
-        let imagesName = ["powersleep","figure.run","flag.2.crossed.fill"]
+        let imagesName = ["powersleep","flag.2.crossed.fill","figure.run","hare"]
         
         for x in 0..<imagesName.count {
             items[x].image = UIImage(systemName: imagesName[x])

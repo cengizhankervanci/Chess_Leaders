@@ -7,16 +7,16 @@
 
 import Foundation
 
-struct RushListViewModel{
+struct BulletListViewModel{
     
     let rushLeaders : LeadersModel!
     
-    func leaderCount() -> Int{
-        return rushLeaders.rush.count
+    func leaderBulletCount() -> Int{
+        return rushLeaders.live_bullet.count
     }
     
     func leaderRushBindWithIndex (index : Int) -> leaderRush{
-        let rusherDetail = self.rushLeaders.rush[index]
+        let rusherDetail = self.rushLeaders.live_bullet[index]
         return leaderRush(specs: rusherDetail)
     }
 }

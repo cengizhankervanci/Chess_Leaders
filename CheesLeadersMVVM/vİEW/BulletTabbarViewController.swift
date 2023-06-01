@@ -7,11 +7,11 @@
 
 import UIKit
 
-class SecondTabbarViewController: UIViewController , UITableViewDelegate , UITableViewDataSource {
+class BulletTabbarViewController: UIViewController , UITableViewDelegate , UITableViewDataSource {
 
     let tableView = UITableView()
     
-    private var leaderRushVM : RushListViewModel!
+    private var leaderBulletVM : BulletListViewModel!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -49,7 +49,7 @@ class SecondTabbarViewController: UIViewController , UITableViewDelegate , UITab
         let url = URL(string: "https://api.chess.com/pub/leaderboards")
         WebService().downloadData(url: url!) { leaders in
             if let leaders = leaders{
-                self.leaderRushVM = RushListViewModel(rushLeaders: leaders)
+                self.leaderBulletVM = BulletListViewModel(rushLeaders: leaders)
                 DispatchQueue.main.async {
                     self.tableView.reloadData()
                 }
@@ -58,13 +58,13 @@ class SecondTabbarViewController: UIViewController , UITableViewDelegate , UITab
     }
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return self.leaderRushVM == nil ? 0 : self.leaderRushVM.leaderCount()
+        return self.leaderBulletVM == nil ? 0 : self.leaderBulletVM.leaderBulletCount()
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "myCell", for: indexPath) as! MyCellTableViewCell
         
-        let leadRushVM = self.leaderRushVM.leaderRushBindWithIndex(index: indexPath.row)
+        let leadRushVM = self.leaderBulletVM.leaderRushBindWithIndex(index: indexPath.row)
         cell.fillAreaWithData(avatar: leadRushVM.avatar, userName: leadRushVM.username, rank: leadRushVM.rank, score: leadRushVM.score, win: leadRushVM.win_count, draw: leadRushVM.draw_count, loss: leadRushVM.loss_count)
         return cell
     }

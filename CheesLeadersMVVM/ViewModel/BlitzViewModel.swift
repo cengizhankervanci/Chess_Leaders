@@ -1,5 +1,5 @@
 //
-//  BattleViewModel.swift
+//  BlitzViewModel.swift
 //  CheesLeadersMVVM
 //
 //  Created by Cengizhan Kervancı on 1.06.2023.
@@ -7,22 +7,21 @@
 
 import Foundation
 
-
-struct BattleListViewModel{
+struct BlitzListViewModel{
     
-    let leadersBattle : LeadersModel!
+    let leadersBlitz : LeadersModel!
     
-    func leaderBattleCount() -> Int{
-        leadersBattle.battle.count
+    func leaderBlitzCount() -> Int{
+        leadersBlitz.live_blitz.count
     }
     
-    func leaderBattleBindWithIndex(index : Int) -> leaderBattle{
-        let details = self.leadersBattle.battle[index]
-        return leaderBattle(specs: details)
+    func leaderBlitzBindWithIndex(index : Int) -> leaderBlitz{
+        let details = self.leadersBlitz.live_blitz[index]
+        return leaderBlitz(specs: details)
     }
 }
 
-struct leaderBattle{
+struct leaderBlitz{
     
     let specs : LeaderInfo
     

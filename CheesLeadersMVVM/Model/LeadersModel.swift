@@ -9,8 +9,9 @@ import Foundation
 
 struct LeadersModel : Codable{
     var daily : [LeaderInfo]
-    var battle : [LeaderInfo]
-    var rush : [LeaderInfo]
+    var live_rapid : [LeaderInfo]
+    var live_bullet : [LeaderInfo]
+    var live_blitz : [LeaderInfo]
 }
 
 struct LeaderInfo : Codable{
